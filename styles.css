@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Roboto, Geneva, Tahoma, sans-serif 
+    font-family: Helvetica, sans-serif;
 }
 
 .container{
@@ -29,21 +29,6 @@ navbar{
     font-size: 20px;
 }
 
-main{
-    background-color: rgb(200, 11, 175);
-    height: 100vh;
-}
-
-main2{
-    background-color: blue;
-    height: 90vh;
-}
-
-footer{
-    background-color: black;
-    height: 85vh;
-}
-
 .fab{
     margin-left: 12vh;
 }
@@ -54,15 +39,129 @@ footer{
 }
 .aside a{
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: bold;
 }
 
-.aside a:hover{
+a:hover{
     color: rgb(17, 243, 17);
 }
 
 .aside a:nth-child(3){
-    border-right: 1px solid gray;
+    border-right: 2px solid gray;
+}
+
+main{
+    height: 100vh;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/main.jpg');
+    background-size: cover;
+    background-color: rgba(0,0,0,0.75);
+    background-blend-mode: color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+
+.main-container{
+    margin-top: 6rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    color: #df23b0;
+}
+
+#retro{
+    margin-top: 30px;
+    cursor:pointer;
+    color: rgb(64, 199, 199);
+    background-color:#fc0fc0;
+    font-size: 18px;
+    width: 350px;
+    height: 4rem;
+    border-radius: 40px;
+}
+
+#retro:hover{
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    transform: scale(1.05);
+    color: #fc0fc0;
+}
+
+main2{
+    height: 90vh;
+    color:white;
+    background-image: url('/img/main2.jpg');
+    background-size: cover;
+    background-color: rgba(0,0,200,0.8);
+    background-blend-mode: color;
+    display: flex;
+    align-items: center;
+}
+
+.main2-container{
+    margin-left: 7rem;
+    align-items: center;
+    justify-content: center;
+    color: rgb(243, 188, 85);
+}
+
+#free{
+    margin-top: 30px;
+    cursor:pointer;
+    color: rgb(40, 87, 87);
+    background-color: rgb(243, 188, 85);
+    font-size: 18px;
+    width: 350px;
+    height: 4rem;
+    border-radius: 40px;
+}
+
+#free:hover{
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    transform: scale(1.05);
+    color:  rgb(243, 188, 85);
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_inf{
+    height: 85vh;
+    margin-top: 5rem;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.subtitle{
+    font-size: 12px;
+    margin: 2rem 3rem 0 5.5rem;
+    color:gray;
 }
