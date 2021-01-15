@@ -144,7 +144,7 @@ footer{
 }
 
 .nav_inf{
-    height: 85vh;
+    height: 73vh;
     margin-top: 5rem;
     color:white;
     display: flex;
@@ -162,6 +162,16 @@ footer{
 
 .subtitle{
     font-size: 12px;
-    margin: 2rem 3rem 0 5.5rem;
+    margin: 2rem 1.5rem 0 5.5rem;
     color:gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.more a{
+    font-size: 15px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-between;
 }
