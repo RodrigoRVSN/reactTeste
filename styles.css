@@ -58,7 +58,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/img/main.JPG');
+    background-image: url('./img/main.JPG');
     background-size: cover;
     background-color: rgba(0,0,0,0.75);
     background-blend-mode: color;
@@ -102,7 +102,7 @@ h1{
 main2{
     height: 90vh;
     color:white;
-    background-image: url('/img/main2.JPG');
+    background-image: url('./img/main2.JPG');
     background-size: cover;
     background-color: rgba(0,0,200,0.8);
     background-blend-mode: color;
