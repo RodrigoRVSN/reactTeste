@@ -1,16 +1,11 @@
-@media screen and (max-width:900px){
-    .nav_inf{
-        height: 60vh;
-        margin: 0;
-        color:white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        justify-content: center;
+@media screen and (max-width:920px){
+    html{
+        font-size: 50%;
     }
 
     .aside{
         display: none;
+        border: 0;
     }
 
     .one,.two,.three{
@@ -18,6 +13,7 @@
         margin: 7px auto;
         width: 100%;
         height: 5px;
+        transition-duration: 0.3s;
     }
 
     .toggle{
@@ -25,45 +21,96 @@
         height: 30px;
         margin-right: 3rem;
     }
-    main{
+
+    .menu.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
         height: 100vh;
-        background-image: url('./img/main.jpg');
-        background-size: cover;
+        background-color: black;
+        z-index: 10;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu.on nav{
+        display: block;
+    }
+
+    .menu.on .toggle{
+        position: absolute;
+        top: 24px;
+        right: 20px;
+    }
+
+    .menu.on .toggle .one{ transform: rotate(45deg) translate(7px,7px);}
+    .menu.on .toggle .two{opacity: 0;}
+    .menu.on .toggle .three {transform: rotate(-45deg) translate(8px,-11px);}
+
+    .menu.on nav{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu.on nav a{
+        transition-duration: 0.3s;
+        font-size: 4rem;
+        line-height: 8rem;
+    }
+
+    main{
+        margin-top: 8rem;
         background-position: center;
-        background-color: rgba(0,0,0,0.75);
-        background-blend-mode: color;
         display: flex;
         flex-direction: column;
     }
     main2{
         background-position: center;
+        display: flex;
+        flex-direction: column;
     }
     .main-container{
         align-items: center;
         margin-top: 6rem;
-        color: #df23b0;
     }
     .main2-container{
         align-items: center;
-        margin-top: 4rem;
-        color: rgb(243, 188, 85);
+        margin-top: 6rem;
     }
-    h4{
-        font-size: 40px
+    
+    #retro{
+        width: 120%;
+        height: 120%;
+    }
+    
+    #free{
+        align-items: center;
+        width: 80%;
+        height: 20%;
+    }
+
+    .nav_inf{
+        width: 90vw;
+        height: 60vh;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+    .subtitle{
+        margin-top: 3rem;
     }
 }
 
 @media screen and (max-width:600px){
     
-    h1{
-        font-size: 45px;
-    }
-    h4{
-        font-size: 15px
-    }
 
     .info{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         justify-content: center;
@@ -82,13 +129,9 @@
         height: 115vh;
         margin-top: 5rem;
         color:white;
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
         justify-content: start;
-    }
-    .subtitle{
-        margin-top: 3rem;
+        align-items: initial;
     }
     .main-container{
         width: 70vh;
