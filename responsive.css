@@ -39,6 +39,11 @@
         margin-top: 6rem;
         color: #df23b0;
     }
+    .main2-container{
+        align-items: center;
+        margin-top: 4rem;
+        color: rgb(243, 188, 85);
+    }
     h4{
         font-size: 20px
     }
@@ -81,4 +86,11 @@
     .subtitle{
         margin-top: 3rem;
     }
+    .main-container{
+        width: 70vh;
+    }
+    .main2-container{
+        width: 70vh;
+    }
+    
 }
